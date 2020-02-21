@@ -17,10 +17,9 @@
         height: 44px;
         position: fixed;
         top: 0;
-    
-        img {
-            padding: 32%;
-        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &-1 {
@@ -39,5 +38,15 @@
     .h2-header {
         font-family: $mainFont;
         font-size: $secondTitle-sm;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-header {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $headerColor;
+        padding-top: 1%;
+        margin-top: 45px;
     }
 }
