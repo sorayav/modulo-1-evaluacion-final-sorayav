@@ -1,0 +1,79 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        font-size: $mainContent;
+    }
+
+    .h3-main {
+        font-size: $secondTitle-tb;
+        line-height: 30px;
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    .section-tips {
+    margin: 0 15px;
+
+        small { // We can style this because it's common to all 'tips' within the section.
+            font-family: $mainFont;
+            font-size: 14px;
+            color: #8ccbea;
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 2%;
+            text-transform: capitalize;
+        }
+
+        .btn-article {
+            width: 76px;
+            height: 45px;
+            border-radius: 22.5px;
+            border: solid 2px $btnColor;
+            background-color: $headerColor;
+            color: $btnColor;
+            font-family: $mainFont;
+            font-size: $btnSize;
+
+                a {
+                    color: $btnColor;
+                }
+        }
+        
+    }
+
+    .section-purchase {
+        margin: 0;
+        width: 100vw;
+        background-color: $purchaseSectionBg;
+        padding: 30px 0;
+
+        .h4-main {
+            font-size: $mainContent;
+            line-height: 30px;
+        }
+
+        .purchase-items {
+            display: grid;
+            grid-template-columns: ;
+        }
+
+        .btn-purchase {
+            width: 184px;
+            height: 45px;
+            border-radius: 22.5px;
+            background-color:$btnColor;
+            color: $headerColor;
+            font-family: $mainFont;
+            font-size: $btnSize;
+
+                a {
+                    color: $headerColor;
+                }
+        }
+    }
+
+
+}

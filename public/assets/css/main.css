@@ -230,6 +230,24 @@ li {
   margin: auto;
 }
 
+.container-left {
+  text-align: left;
+  margin: 30px 15px 45px;
+}
+
+.h3-main {
+  font-family: "Roboto Slab";
+}
+
+.h4-main {
+  font-family: "Roboto Slab";
+}
+
+p {
+  font-family: "Roboto";
+  line-height: 30px;
+}
+
 .header {
   width: 100vw;
   height: 100vh;
@@ -292,8 +310,91 @@ li {
   height: 45px;
   border-radius: 50%;
   background-color: #fff;
-  padding-top: 1%;
   margin-top: 45px;
+  padding-top: 1%;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main p {
+  font-size: 18px;
+}
+
+.main .h3-main {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.main .section-tips {
+  margin: 0 15px;
+}
+
+.main .section-tips small {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #8ccbea;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 2%;
+  text-transform: capitalize;
+}
+
+.main .section-tips .btn-article {
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: solid 2px #f26002;
+  background-color: #fff;
+  color: #f26002;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.main .section-tips .btn-article a {
+  color: #f26002;
+}
+
+.main .section-purchase {
+  margin: 0;
+  width: 100vw;
+  background-color: #eff9ff;
+  padding: 30px 0;
+}
+
+.main .section-purchase .h4-main {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.main .section-purchase .purchase-items {
+  display: grid;
+}
+
+.main .section-purchase .btn-purchase {
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: #f26002;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+.main .section-purchase .btn-purchase a {
+  color: #fff;
 }
 
 @media all and (min-width: 768px) {
@@ -304,6 +405,10 @@ li {
 
   .header .h2-header {
     font-size: 24px;
+  }
+
+  .header .btn-header {
+    padding-top: 0.5%;
   }
 }
 

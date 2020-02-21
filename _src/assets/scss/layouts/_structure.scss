@@ -1,5 +1,22 @@
 .container {
     text-align: center;
     margin: auto;
-    
+}
+
+.container-left {
+    text-align: left;
+    margin: 30px 15px 45px;
+}
+
+.h3-main {
+    font-family: $titleFont;
+}
+
+.h4-main {
+    font-family: $titleFont;
+}
+
+p {
+    font-family:$mainFont;
+    line-height: 30px;
 }

@@ -61,7 +61,11 @@
         height: 45px;
         border-radius: 50%;
         background-color: $headerColor;
-        padding-top: 1%;
         margin-top: 45px;
+        padding-top: 1%;
+
+        @include forTablet {
+            padding-top: 0.5%;
+        }
     }
 }
