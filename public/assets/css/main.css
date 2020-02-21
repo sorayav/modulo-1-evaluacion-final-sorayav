@@ -264,6 +264,14 @@ li {
   padding: 32%;
 }
 
+.header-1 {
+  height: 50vh;
+}
+
+.header-2 {
+  height: 50vh;
+}
+
 .header .h1-header {
   text-transform: uppercase;
   font-size: 42px;
