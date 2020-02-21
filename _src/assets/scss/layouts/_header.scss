@@ -1,0 +1,35 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image:url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: $titleFont;
+    color: $headerColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .burger-icon {
+        background-color: $btnBurger;
+        width: 44px;
+        height: 44px;
+        position: fixed;
+        top: 0;
+    
+        img {
+            padding: 32%;
+        }
+    }
+
+    .h1-header {
+        text-transform: uppercase;
+        font-size: $titleSize-sm;
+    }
+
+    .h2-header {
+        font-family: $mainFont;
+        font-size: $secondTitle-sm;
+    }
+}
