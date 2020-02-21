@@ -8,6 +8,13 @@ $btnBurger: #0271bc;
 // Fonts & font sizes
 $titleFont: 'Roboto Slab';
 $mainFont: 'Roboto';
-$titleSize-sm: 42px;
-$secondTitle-sm: 16px;
+$titleSize-mb: 42px;
+$titleSize-tb: 80px;
+$titleSize-dk: 100px;
+$secondTitle-mb: 16px;
+$secondTitle-tb: 24px;
+
+// Device sizes
+$tablet: 768px;
+$pc: 1200px;
 

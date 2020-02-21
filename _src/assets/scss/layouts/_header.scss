@@ -32,13 +32,28 @@
 
     .h1-header {
         text-transform: uppercase;
-        font-size: $titleSize-sm;
+        font-size: $titleSize-mb;
+
+        @include forTablet {
+            font-size: $titleSize-tb;
+            line-height: 106px;
+        }
+
+        @include forPc {
+            font-size: $titleSize-dk;
+            line-height: 132px;
+        }
     }
 
     .h2-header {
         font-family: $mainFont;
-        font-size: $secondTitle-sm;
+        font-size: $secondTitle-mb;
         letter-spacing: 0.5px;
+
+        @include forTablet {
+            font-size: $secondTitle-tb;
+        }
+
     }
 
     .btn-header {

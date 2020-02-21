@@ -296,4 +296,22 @@ li {
   margin-top: 45px;
 }
 
+@media all and (min-width: 768px) {
+  .header .h1-header {
+    font-size: 80px;
+    line-height: 106px;
+  }
+
+  .header .h2-header {
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header .h1-header {
+    font-size: 100px;
+    line-height: 132px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
