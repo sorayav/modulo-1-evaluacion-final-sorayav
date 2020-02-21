@@ -225,6 +225,11 @@ li {
   list-style-type: none;
 }
 
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .container {
   text-align: center;
   margin: auto;
@@ -367,20 +372,52 @@ p {
   color: #f26002;
 }
 
+.main .section-tips .btn-article a:hover {
+  color: #fff;
+}
+
+.main .section-tips .btn-article:hover {
+  background-color: #f26002;
+  color: #fff;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
 .main .section-purchase {
   margin: 0;
   width: 100vw;
   background-color: #eff9ff;
-  padding: 30px 0;
+  padding: 45px 0;
 }
 
 .main .section-purchase .h4-main {
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 }
 
-.main .section-purchase .purchase-items {
+.main .section-purchase p {
+  margin: 0 0 45px 0;
+}
+
+.main .section-purchase .section-grid {
+  padding: 25px 70px 0 70px;
   display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.main .section-purchase .section-grid .purchase-item1 {
+  grid-column: 2/3;
+  margin-top: 0;
+}
+
+.main .section-purchase .section-grid .purchase-item2 {
+  grid-column: 2/3;
+}
+
+.main .section-purchase .section-grid .purchase-item3 {
+  grid-column: 2/3;
 }
 
 .main .section-purchase .btn-purchase {
@@ -397,6 +434,17 @@ p {
   color: #fff;
 }
 
+.main .section-purchase .btn-purchase a:hover {
+  color: #f26002;
+}
+
+.main .section-purchase .btn-purchase:hover {
+  background-color: #fff;
+  color: #f26002;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
 @media all and (min-width: 768px) {
   .header .h1-header {
     font-size: 80px;
@@ -410,12 +458,20 @@ p {
   .header .btn-header {
     padding-top: 0.5%;
   }
+
+  .main .section-tips {
+    padding: 0 39px;
+  }
 }
 
 @media all and (min-width: 1200px) {
   .header .h1-header {
     font-size: 100px;
     line-height: 132px;
+  }
+
+  .main .section-tips {
+    padding: 0 275px;
   }
 }
 
