@@ -22,17 +22,21 @@
         align-items: center;
     }
 
-    &-1 {
+    &-top {
         height: 50vh;
     }
 
-    &-2 {
+    &-bottom {
         height: 50vh;
     }
 
     .h1-header {
         text-transform: uppercase;
         font-size: $titleSize-mb;
+        line-height: 55px;
+        margin-bottom: 0;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        
 
         @include forTablet {
             font-size: $titleSize-tb;
@@ -42,18 +46,26 @@
         @include forPc {
             font-size: $titleSize-dk;
             line-height: 132px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            padding: 0 275px;
         }
     }
 
     .h2-header {
         font-family: $mainFont;
         font-size: $secondTitle-mb;
-        letter-spacing: 0.5px;
+        margin-top: 0;
+        padding: 15px 0 45px 0;
+        font-weight: lighter;
 
         @include forTablet {
             font-size: $secondTitle-tb;
+            padding: 20px 0 30px 0;
         }
 
+        @include forPc {
+            padding: 0 0 30px 0;
+        }
     }
 
     .btn-header {
@@ -61,7 +73,6 @@
         height: 45px;
         border-radius: 50%;
         background-color: $headerColor;
-        margin-top: 45px;
         padding-top: 1%;
 
         @include forTablet {

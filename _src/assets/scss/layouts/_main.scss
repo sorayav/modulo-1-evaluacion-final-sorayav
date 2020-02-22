@@ -3,32 +3,45 @@
     flex-direction: column;
     justify-content: center;
 
-    p {
-        font-size: $mainContent;
+    p { // All constant styles in the paragraphs within the main section.
+        font-size: $mainContent-mb;
+        color: $secondaryColor;
+
+        @include forTablet {
+            font-size: $mainContent-tb;
+        }
     }
 
     .h3-main {
-        font-size: $secondTitle-tb;
+        font-size: $sectionTitle-mb;
         line-height: 30px;
         margin: 0;
         text-transform: capitalize;
+
+        @include forTablet {
+            font-size: $sectionTitle-tb;
+        }
+
+        @include forPc {
+            font-size: $sectionTitle-dk;
+        }
     }
 
-    .section-tips {
-    margin: 0 15px;
+    .section-articles {
+        padding: 0 15px; // To add more air in the box.
 
-    @include forTablet {
-        padding: 0 39px;        
-    }
+        @include forTablet {
+        padding: 0 39px;       
+        }
 
-    @include forPc {
+        @include forPc {
         padding: 0 275px;
-    }
+        }
 
         small { // We can style this because it's common to all 'tips' within the section.
             font-family: $mainFont;
             font-size: $smallContent;
-            color: #8ccbea;
+            color: $smallColor;
             display: inline-block;
             margin-top: 15px;
             margin-bottom: 2%;
@@ -66,52 +79,55 @@
         margin: 0;
         width: 100vw;
         background-color: $purchaseSectionBg;
-        padding: 45px 0;
+        padding: 30px 0 60px 0;
 
         .h4-main {
-            font-size: $mainContent;
+            font-size: $mainContent-mb;
             line-height: 30px;
             margin: 0;
         }
 
-        p {
+        .p-grid {
             margin: 0 0 45px 0;
         }
 
         .section-grid {
-            padding:25px 70px 0 70px;
+            padding:45px 70px 0px 70px;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
             
             .purchase-item1 {
-                grid-column: 2/3;
+                grid-row: 1/2;
                 margin-top: 0;
             }
 
             .purchase-item2 {
-                grid-column: 2/3;
+                grid-row: 2/3;
             }
 
             .purchase-item3 {
-                grid-column: 2/3;
+                grid-row: 3/4;
             }
 
             @include forTablet {
-                grid-template-columns: auto auto auto;
-                grid-template-rows: auto;
+                padding: 45px 30px 0px 30px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
             
                 .purchase-item1 {
-                    grid-column: 2/3;
-                    margin-top: 0;
+                    grid-column: 1/2;
+                    grid-row: 1/1;
                 }
     
                 .purchase-item2 {
                     grid-column: 2/3;
+                    grid-row: 1/1;
                 }
     
                 .purchase-item3 {
-                    grid-column: 2/3;
+                    grid-column: 3/4;
+                    grid-row: 1/1;
                 }
 
             }
@@ -121,6 +137,7 @@
             width: 184px;
             height: 45px;
             border-radius: 22.5px;
+            border: none;
             background-color:$btnColor;
             color: $headerColor;
             font-family: $mainFont;
