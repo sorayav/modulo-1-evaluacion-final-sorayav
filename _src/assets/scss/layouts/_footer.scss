@@ -20,6 +20,10 @@
         align-items: center;
         position: relative;
         margin-top: -25px;
+
+        img {
+            padding-top: 25%;
+        }
     }
     
     .footer-main-menu, .footer-social-menu {
@@ -36,7 +40,7 @@
     }
 
     .footer-page-info {
-        font-size: $smallContent;
+        font-size: $smallContent-mb;
         
 
         .footer-heart {
