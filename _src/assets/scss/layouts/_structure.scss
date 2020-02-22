@@ -10,6 +10,10 @@ body {
 .container-left {
     text-align: left;
     padding: 30px 15px 45px 15px;
+
+    @include forPc {
+        padding: 60px 0px 60px 0px; 
+    }
 }
 
 .h3-main {

@@ -28,7 +28,7 @@
     }
 
     .section-articles {
-        padding: 0 15px; // To add more air in the box.
+        // padding: 0 15px; To add more air in the box for bigger mobile devices if needed.
 
         @include forTablet {
         padding: 0 39px;       
@@ -38,14 +38,22 @@
         padding: 0 275px;
         }
 
-        small { // We can style this because it's common to all 'tips' within the section.
+        small { // This part is common to all articles.
             font-family: $mainFont;
             font-size: $smallContent;
             color: $smallColor;
             display: inline-block;
-            margin-top: 15px;
-            margin-bottom: 2%;
+            padding: 2% 0;
             text-transform: capitalize;
+        }
+
+        .p-content {
+            margin-bottom: 0;
+
+            @include forTablet {
+                margin-top: 0;
+                padding-top: 30px;
+            }
         }
 
         .btn-article {
@@ -57,6 +65,7 @@
             color: $btnColor;
             font-family: $mainFont;
             font-size: $btnSize;
+            margin-top: 30px;
 
                 a {
                     color: $btnColor;
@@ -67,9 +76,17 @@
                 }
 
                 &:hover, &:focus {
-                    background-color:$btnColor;
                     color: $headerColor;
+                    background-color:$btnColor;
                     transition: background-color 0.3s linear;
+                }
+
+                @include forTablet {
+                    width: 91px;
+                }
+
+                @include forPc {
+                    width: 160px;
                 }
         }
         
