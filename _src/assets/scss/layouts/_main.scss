@@ -27,7 +27,7 @@
 
         small { // We can style this because it's common to all 'tips' within the section.
             font-family: $mainFont;
-            font-size: 14px;
+            font-size: $smallContent;
             color: #8ccbea;
             display: inline-block;
             margin-top: 15px;
@@ -48,12 +48,12 @@
                 a {
                     color: $btnColor;
                     
-                    &:hover {
+                    &:hover, &:focus {
                         color: $headerColor;
                     }
                 }
 
-                &:hover {
+                &:hover, &:focus {
                     background-color:$btnColor;
                     color: $headerColor;
                     transition: background-color 0.3s linear;
@@ -95,6 +95,25 @@
 
             .purchase-item3 {
                 grid-column: 2/3;
+            }
+
+            @include forTablet {
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto;
+            
+                .purchase-item1 {
+                    grid-column: 2/3;
+                    margin-top: 0;
+                }
+    
+                .purchase-item2 {
+                    grid-column: 2/3;
+                }
+    
+                .purchase-item3 {
+                    grid-column: 2/3;
+                }
+
             }
         }
 

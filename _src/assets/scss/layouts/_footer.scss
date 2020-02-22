@@ -1,0 +1,46 @@
+
+.footer {
+    background-color: $footerBgColor;
+    font-family: $mainFont;
+    color: $headerColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .btn-footer {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: -25px;
+    }
+    
+    .footer-main-menu, .footer-social-menu {
+        text-transform: uppercase;
+        line-height: 30px;
+        
+        a {
+            color: $headerColor;
+
+            &:hover, &:focus {
+                border-bottom: solid 1px $btnColor;
+            }
+        }
+    }
+
+    .footer-page-info {
+        font-size: $smallContent;
+        
+
+        .footer-heart {
+            color: $btnColor;
+        }
+    }
+}

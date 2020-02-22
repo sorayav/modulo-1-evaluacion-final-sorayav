@@ -4,17 +4,21 @@ $primaryColor: #000;
 $secondaryColor: #4a4a4a;
 $btnColor: #f26002;
 $btnBurger: #0271bc;
-$purchaseSectionBg: #eff9ff; 
+$purchaseSectionBg: #eff9ff;
+$footerBgColor: #304268;
 
-// Fonts & font sizes
+// Typography
 $titleFont: 'Roboto Slab';
 $mainFont: 'Roboto';
+
+// Font sizes
 $titleSize-mb: 42px;
 $titleSize-tb: 80px;
 $titleSize-dk: 100px;
 $secondTitle-mb: 16px;
 $secondTitle-tb: 24px;
 $mainContent: 18px;
+$smallContent: 14px;
 $btnSize: 20px;
 
 // Device sizes

@@ -14,7 +14,7 @@
     <body>
         <div class="page">
             <header class="header">
-                <div class="burger-icon"><a href="https://adalab.es" target="_blank" title="Go to Adalab web"><img src="./assets/images/ico-menu.svg" alt="Menu" title="Menu"></a>
+                <div class="burger-icon"><a href="https://adalab.es" target="_blank" title="Go to Adalab web" aria-label="Go to Adalab web"><img src="./assets/images/ico-menu.svg" alt="Menu" title="Menu"></a>
 
                 </div>
                 <div class="hero container">
@@ -31,15 +31,18 @@
             </header>
             <main class="main">
                 <div class="container-left">
-                    <section class="section-tips"> <small>Insomnia tips</small>
+                    <section class="section-tips">
+                        <article class="article-item"> <small>Insomnia tips</small>
 
-                         <h3 class="h3-main">Looking through a window</h3>
+                             <h3 class="h3-main">Looking through a window</h3>
 
-                        <p class="p-content">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
-                            luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-                        <button class="btn-article"><a href="#" title="Go to the article">Go</a>
+                            <p class="p-content">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+                                luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+                            <button class="btn-article"
+                            aria-label="Go to the article"><a href="#" title="Go to the article">Go</a>
 
-                        </button>
+                            </button>
+                        </article>
                     </section>
                 </div>
                 <div class="container">
@@ -69,8 +72,47 @@
                     </section>
                 </div>
             </main>
-            <footer class="footer">Footer
-                <div class="container"></div>
+            <footer class="footer">
+                <div class="btn-footer"><a href="#" title="Go to top"><img src="./assets/images/ico-arrow.svg" alt="Go to top" title="Go to top"></a>
+
+                </div>
+                <!-- MIRAR ARIA -->
+                <nav class="footer-main-menu">
+                    <ul>
+                        <li><a href="https://adalab.es" title="Articles">Articles</a>
+
+                        </li>
+                        <li><a href="https://adalab.es" title="Books">Books</a>
+
+                        </li>
+                        <li><a href="https://adalab.es" title="Events">Events</a>
+
+                        </li>
+                        <li><a href="https://adalab.es" title="Reasons">Reasons</a>
+
+                        </li>
+                        <li><a href="https://adalab.es" title="Tips">Tips</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="footer-social-menu">
+                    <ul>
+                        <li><a href="https://adalab.es" title="Twitter">Twitter</a>
+
+                        </li>
+                        <li><a href="https://adalab.es" title="Instagram">Instagram</a>
+
+                        </li>
+                        <li><a href="https://adalab.es" title="Mastodon.social">Mastodon.social</a>
+
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-page-info">
+                    <p>©2017</p>
+                    <p>we <span class="footer-heart">❤︎</span> components</p>
+                </div>
             </footer>
         </div>
     </body>
