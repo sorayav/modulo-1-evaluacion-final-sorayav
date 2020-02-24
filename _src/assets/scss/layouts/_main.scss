@@ -73,14 +73,10 @@
             margin-top: 30px;
 
                 a {
-                    color: $btnColor;
-                    display: block;
-                    width: 100%;
-                    padding: 5% 0;
+                    color: $btnColor;                    
                 
                     &:hover, &:focus {
                         color: $headerColor;
-                        width: 100%;
                     }
                 }
 
@@ -190,13 +186,10 @@
 
                 a {
                     color: $btnColor;
-                    display: block;
-                    width: 100%;
                     color: $headerColor;
                     
                     &:hover, &:focus {
                         color: $btnColor;
-                        width: 100%;
                     }
                 }
 

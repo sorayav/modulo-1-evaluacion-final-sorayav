@@ -388,14 +388,10 @@ button {
 
 .main .main--articles .main--articles__btn a {
   color: #f26002;
-  display: block;
-  width: 100%;
-  padding: 5% 0;
 }
 
 .main .main--articles .main--articles__btn a:hover,.main .main--articles .main--articles__btn a:focus {
   color: #fff;
-  width: 100%;
 }
 
 .main .main--articles .main--articles__btn:hover,.main .main--articles .main--articles__btn:focus {
@@ -457,14 +453,11 @@ button {
 
 .main .main--purchase .main--purchase__btn a {
   color: #f26002;
-  display: block;
-  width: 100%;
   color: #fff;
 }
 
 .main .main--purchase .main--purchase__btn a:hover,.main .main--purchase .main--purchase__btn a:focus {
   color: #f26002;
-  width: 100%;
 }
 
 .main .main--purchase .main--purchase__btn:hover {
@@ -539,6 +532,8 @@ button {
 
 .footer--flex .footer--main-menu a:hover,.footer--flex .footer--main-menu a:focus,.footer--flex .footer--social-menu a:hover,.footer--flex .footer--social-menu a:focus {
   border-bottom: dashed 3px #f26002;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .footer--flex .footer--page-info {
@@ -715,8 +710,8 @@ button {
   }
 
   50% {
-    -webkit-transform: translate(-50%, -55%);
-    transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -58%);
+    transform: translate(-50%, -58%);
   }
 
   100% {
@@ -732,8 +727,8 @@ button {
   }
 
   50% {
-    -webkit-transform: translate(-50%, -55%);
-    transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -58%);
+    transform: translate(-50%, -58%);
   }
 
   100% {

@@ -27,7 +27,7 @@
             }
 
             50% {
-                transform: translate(-50%,-55%);
+                transform: translate(-50%,-58%);
             }
 
             100% {
@@ -73,6 +73,7 @@
 
             &:hover, &:focus {
                 border-bottom: dashed 3px $btnColor;
+                transition: all 0.1s ease-out;
             }
         }
     }
