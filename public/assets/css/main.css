@@ -668,6 +668,10 @@ button {
     padding: 0 0 1% 0;
   }
 
+  .header .header--btn {
+    padding-top: 0.2%;
+  }
+
   .main .main--h3 {
     font-size: 32px;
   }
