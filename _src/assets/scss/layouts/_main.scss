@@ -12,7 +12,8 @@
         }
     }
 
-    .h3-main {
+    .main--h3 {
+        font-family: $titleFont;
         font-size: $sectionTitle-mb;
         line-height: 30px;
         margin: 0;
@@ -27,7 +28,7 @@
         }
     }
 
-    .section-articles {
+    .main--articles {
         // padding: 0 15px; To add more air in the box for bigger mobile devices if needed.
 
         @include forTablet {
@@ -51,7 +52,7 @@
             }
         }
 
-        .p-article {
+        .main--articles__p {
             margin-bottom: 0;
 
             @include forTablet {
@@ -61,7 +62,7 @@
         }
     
 
-        .btn-article {
+        .main--articles__btn {
             width: 76px;
             height: 45px;
             border-radius: 22.5px;
@@ -101,7 +102,7 @@
         
     }
 
-    .section-purchase {
+    .main--purchase {
         margin: 0;
         width: 100vw;
         background-color: $purchaseSectionBg;
@@ -111,7 +112,8 @@
             padding: 70px 0;
         }
 
-        .h4-main {
+        .main--h4 {
+            font-family: $titleFont;
             font-size: $mainContent-mb;
             line-height: 30px;
             margin: 0;
@@ -122,7 +124,7 @@
             }
         }
 
-        .p-grid {
+        .purchase--grid__p {
             margin: 0 0 45px 0;
             color: $primaryColor;
 
@@ -131,22 +133,22 @@
             }
         }
 
-        .section-grid {
+        .main--purchase__grid {
             padding:45px 70px 0px 70px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr;
             
-            .purchase-item1 {
+            .purchase--item1 {
                 grid-row: 1/2;
                 margin-top: 0;
             }
 
-            .purchase-item2 {
+            .purchase--item2 {
                 grid-row: 2/3;
             }
 
-            .purchase-item3 {
+            .purchase--item3 {
                 grid-row: 3/4;
             }
 
@@ -156,17 +158,17 @@
                 grid-template-rows: 1fr;
                 grid-gap: 8%;
             
-                .purchase-item1 {
+                .purchase--item1 {
                     grid-column: 1/2;
                     grid-row: 1/1;
                 }
     
-                .purchase-item2 {
+                .purchase--item2 {
                     grid-column: 2/3;
                     grid-row: 1/1;
                 }
     
-                .purchase-item3 {
+                .purchase--item3 {
                     grid-column: 3/4;
                     grid-row: 1/1;
                 }
@@ -177,7 +179,7 @@
             }
         }
 
-        .btn-purchase {
+        .main--purchase__btn {
             width: 184px;
             height: 45px;
             border-radius: 22.5px;

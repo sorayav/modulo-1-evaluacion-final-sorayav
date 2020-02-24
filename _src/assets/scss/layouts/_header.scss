@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    .burger-icon {
+    .header--burger {
         background-color: $btnBurger;
         width: 44px;
         height: 44px;
@@ -22,15 +22,15 @@
         align-items: center;
     }
 
-    &-top {
+    &--top {
         height: 50vh;
     }
 
-    &-bottom {
+    &--bottom {
         height: 50vh;
     }
 
-    .h1-header {
+    .header--h1 {
         text-transform: uppercase;
         font-size: $titleSize-mb;
         line-height: 55px;
@@ -51,7 +51,7 @@
         }
     }
 
-    .h2-header {
+    .header--h2 {
         font-family: $mainFont;
         font-size: $secondTitle-mb;
         margin-top: 0;
@@ -68,7 +68,7 @@
         }
     }
 
-    .btn-header {
+    .header--btn {
         width: 45px;
         height: 45px;
         border-radius: 50%;

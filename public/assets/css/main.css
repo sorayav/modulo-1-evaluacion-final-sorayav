@@ -245,15 +245,6 @@ body {
   padding: 30px 15px 45px 15px;
 }
 
-.h3-main {
-  font-family: "Roboto Slab";
-}
-
-.h4-main {
-  font-family: "Roboto Slab";
-  margin-bottom: 0;
-}
-
 p {
   font-family: "Roboto";
   line-height: 30px;
@@ -284,7 +275,7 @@ button {
   justify-content: flex-end;
 }
 
-.header .burger-icon {
+.header .header--burger {
   background-color: #0271bc;
   width: 44px;
   height: 44px;
@@ -301,15 +292,15 @@ button {
   align-items: center;
 }
 
-.header-top {
+.header--top {
   height: 50vh;
 }
 
-.header-bottom {
+.header--bottom {
   height: 50vh;
 }
 
-.header .h1-header {
+.header .header--h1 {
   text-transform: uppercase;
   font-size: 42px;
   line-height: 55px;
@@ -317,7 +308,7 @@ button {
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.header .h2-header {
+.header .header--h2 {
   font-family: "Roboto";
   font-size: 16px;
   margin-top: 0;
@@ -325,7 +316,7 @@ button {
   font-weight: lighter;
 }
 
-.header .btn-header {
+.header .header--btn {
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -352,14 +343,15 @@ button {
   color: #4a4a4a;
 }
 
-.main .h3-main {
+.main .main--h3 {
+  font-family: "Roboto Slab";
   font-size: 24px;
   line-height: 30px;
   margin: 0;
   text-transform: capitalize;
 }
 
-.main .section-articles small {
+.main .main--articles small {
   font-family: "Roboto";
   font-size: 14px;
   color: #8ccbea;
@@ -368,11 +360,11 @@ button {
   text-transform: capitalize;
 }
 
-.main .section-articles .p-article {
+.main .main--articles .main--articles__p {
   margin-bottom: 0;
 }
 
-.main .section-articles .btn-article {
+.main .main--articles .main--articles__btn {
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
@@ -384,64 +376,65 @@ button {
   margin-top: 30px;
 }
 
-.main .section-articles .btn-article a {
+.main .main--articles .main--articles__btn a {
   color: #f26002;
   display: block;
   width: 100%;
   padding: 5% 0;
 }
 
-.main .section-articles .btn-article a:hover,.main .section-articles .btn-article a:focus {
+.main .main--articles .main--articles__btn a:hover,.main .main--articles .main--articles__btn a:focus {
   color: #fff;
   width: 100%;
 }
 
-.main .section-articles .btn-article:hover,.main .section-articles .btn-article:focus {
+.main .main--articles .main--articles__btn:hover,.main .main--articles .main--articles__btn:focus {
   background-color: #f26002;
   color: #fff;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-.main .section-purchase {
+.main .main--purchase {
   margin: 0;
   width: 100vw;
   background-color: #eff9ff;
   padding: 35px 0 60px 0;
 }
 
-.main .section-purchase .h4-main {
+.main .main--purchase .main--h4 {
+  font-family: "Roboto Slab";
   font-size: 18px;
   line-height: 30px;
   margin: 0;
 }
 
-.main .section-purchase .p-grid {
+.main .main--purchase .purchase--grid__p {
   margin: 0 0 45px 0;
   color: #000;
 }
 
-.main .section-purchase .section-grid {
+.main .main--purchase .main--purchase__grid {
   padding: 45px 70px 0px 70px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.main .section-purchase .section-grid .purchase-item1 {
+.main .main--purchase .main--purchase__grid .purchase--item1 {
   grid-row: 1/2;
   margin-top: 0;
 }
 
-.main .section-purchase .section-grid .purchase-item2 {
+.main .main--purchase .main--purchase__grid .purchase--item2 {
   grid-row: 2/3;
 }
 
-.main .section-purchase .section-grid .purchase-item3 {
+.main .main--purchase .main--purchase__grid .purchase--item3 {
   grid-row: 3/4;
 }
 
-.main .section-purchase .btn-purchase {
+.main .main--purchase .main--purchase__btn {
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -452,19 +445,19 @@ button {
   font-size: 20px;
 }
 
-.main .section-purchase .btn-purchase a {
+.main .main--purchase .main--purchase__btn a {
   color: #f26002;
   display: block;
   width: 100%;
   color: #fff;
 }
 
-.main .section-purchase .btn-purchase a:hover,.main .section-purchase .btn-purchase a:focus {
+.main .main--purchase .main--purchase__btn a:hover,.main .main--purchase .main--purchase__btn a:focus {
   color: #f26002;
   width: 100%;
 }
 
-.main .section-purchase .btn-purchase:hover {
+.main .main--purchase .main--purchase__btn:hover {
   background-color: #fff;
   color: #f26002;
   -webkit-transition: background-color 0.3s linear;
@@ -475,7 +468,7 @@ button {
   background-color: #304268;
 }
 
-.footer .btn-footer {
+.footer .footer--btn {
   display: block;
   width: 45px;
   height: 45px;
@@ -497,15 +490,15 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation: btn-footer__animation 2s infinite linear;
-  animation: btn-footer__animation 2s infinite linear;
+  -webkit-animation: footer--btn__animation 2s infinite linear;
+  animation: footer--btn__animation 2s infinite linear;
 }
 
-.footer .btn-footer img {
+.footer .footer--btn img {
   padding-top: 25%;
 }
 
-.footer-flex {
+.footer--flex {
   font-family: "Roboto";
   color: #fff;
   display: -webkit-box;
@@ -525,43 +518,43 @@ button {
   padding: 45px 40px;
 }
 
-.footer-flex .footer-main-menu,.footer-flex .footer-social-menu {
+.footer--flex .footer--main-menu,.footer--flex .footer--social-menu {
   text-transform: uppercase;
   line-height: 30px;
 }
 
-.footer-flex .footer-main-menu a,.footer-flex .footer-social-menu a {
+.footer--flex .footer--main-menu a,.footer--flex .footer--social-menu a {
   color: #fff;
 }
 
-.footer-flex .footer-main-menu a:hover,.footer-flex .footer-main-menu a:focus,.footer-flex .footer-social-menu a:hover,.footer-flex .footer-social-menu a:focus {
+.footer--flex .footer--main-menu a:hover,.footer--flex .footer--main-menu a:focus,.footer--flex .footer--social-menu a:hover,.footer--flex .footer--social-menu a:focus {
   border-bottom: solid 1px #f26002;
 }
 
-.footer-flex .footer-page-info {
+.footer--flex .footer--page-info {
   font-size: 14px;
 }
 
-.footer-flex .footer-page-info p {
+.footer--flex .footer--page-info p {
   line-height: 1;
 }
 
-.footer-flex .footer-page-info .footer-heart {
+.footer--flex .footer--page-info .footer--info__heart {
   color: #f26002;
 }
 
 @media all and (min-width: 768px) {
-  .header .h1-header {
+  .header .header--h1 {
     font-size: 80px;
     line-height: 106px;
   }
 
-  .header .h2-header {
+  .header .header--h2 {
     font-size: 24px;
     padding: 20px 0 30px 0;
   }
 
-  .header .btn-header {
+  .header .header--btn {
     padding-top: 0.5%;
   }
 
@@ -569,59 +562,59 @@ button {
     font-size: 20px;
   }
 
-  .main .h3-main {
+  .main .main--h3 {
     font-size: 26px;
   }
 
-  .main .section-articles {
+  .main .main--articles {
     padding: 0 39px;
   }
 
-  .main .section-articles .p-article {
+  .main .main--articles .main--articles__p {
     margin-top: 0;
     padding-top: 30px;
   }
 
-  .main .section-articles .btn-article {
+  .main .main--articles .main--articles__btn {
     width: 91px;
   }
 
-  .main .section-purchase .h4-main {
+  .main .main--purchase .main--h4 {
     font-size: 24px;
     padding-bottom: 14px;
   }
 
-  .main .section-purchase .p-grid {
+  .main .main--purchase .purchase--grid__p {
     margin: 0 0 60px 0;
   }
 
-  .main .section-purchase .section-grid {
+  .main .main--purchase .main--purchase__grid {
     padding: 45px 30px 0px 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 8%;
   }
 
-  .main .section-purchase .section-grid .purchase-item1 {
+  .main .main--purchase .main--purchase__grid .purchase--item1 {
     grid-column: 1/2;
     grid-row: 1/1;
   }
 
-  .main .section-purchase .section-grid .purchase-item2 {
+  .main .main--purchase .main--purchase__grid .purchase--item2 {
     grid-column: 2/3;
     grid-row: 1/1;
   }
 
-  .main .section-purchase .section-grid .purchase-item3 {
+  .main .main--purchase .main--purchase__grid .purchase--item3 {
     grid-column: 3/4;
     grid-row: 1/1;
   }
 
-  .main .section-purchase .btn-purchase {
+  .main .main--purchase .main--purchase__btn {
     width: 210px;
   }
 
-  .footer-flex {
+  .footer--flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -636,13 +629,13 @@ button {
     padding-right: 95px;
   }
 
-  .footer-flex .footer-main-menu,.footer-flex .footer-social-menu {
+  .footer--flex .footer--main-menu,.footer--flex .footer--social-menu {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
-  .footer-flex .footer-page-info {
+  .footer--flex .footer--page-info {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -654,46 +647,46 @@ button {
     padding: 60px 0px 60px 0px;
   }
 
-  .header .h1-header {
+  .header .header--h1 {
     font-size: 100px;
     line-height: 132px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     padding: 0 275px;
   }
 
-  .header .h2-header {
+  .header .header--h2 {
     padding: 0 0 1% 0;
   }
 
-  .main .h3-main {
+  .main .main--h3 {
     font-size: 32px;
   }
 
-  .main .section-articles {
+  .main .main--articles {
     padding: 0 275px;
   }
 
-  .main .section-articles small {
+  .main .main--articles small {
     font-size: 16px;
   }
 
-  .main .section-articles .btn-article {
+  .main .main--articles .main--articles__btn {
     width: 160px;
   }
 
-  .main .section-purchase {
+  .main .main--purchase {
     padding: 70px 0;
   }
 
-  .main .section-purchase .section-grid {
+  .main .main--purchase .main--purchase__grid {
     padding: 45px 80px 0px 80px;
   }
 
-  .main .section-purchase .btn-purchase {
+  .main .main--purchase .main--purchase__btn {
     width: 255px;
   }
 
-  .footer-flex {
+  .footer--flex {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
@@ -701,7 +694,7 @@ button {
   }
 }
 
-@-webkit-keyframes btn-footer__animation {
+@-webkit-keyframes footer--btn__animation {
   0% {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -718,7 +711,7 @@ button {
   }
 }
 
-@keyframes btn-footer__animation {
+@keyframes footer--btn__animation {
   0% {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
