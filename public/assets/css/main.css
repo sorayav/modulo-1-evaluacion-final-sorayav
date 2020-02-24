@@ -104,8 +104,6 @@ sup {
  /* 1 */
   font-size: 100%;
  /* 1 */
-  line-height: 1.15;
- /* 1 */
   margin: 0;
  /* 2 */;
 }/**
@@ -507,7 +505,7 @@ button {
 }
 
 .footer .footer--btn img {
-  padding-top: 25%;
+  padding-top: 30%;
 }
 
 .footer--flex {
