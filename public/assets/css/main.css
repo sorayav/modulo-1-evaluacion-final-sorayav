@@ -292,6 +292,10 @@ button {
   align-items: center;
 }
 
+.header .header--burger a {
+  padding: 30%;
+}
+
 .header--top {
   height: 50vh;
 }
@@ -323,6 +327,14 @@ button {
   border: none;
   background-color: #fff;
   padding-top: 1%;
+}
+
+.header .header--btn:hover,.header .header--btn:focus,.header .header--btn:active {
+  border-radius: 20%;
+  background-color: transparent;
+  border: dashed 3px #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .main {
@@ -528,7 +540,7 @@ button {
 }
 
 .footer--flex .footer--main-menu a:hover,.footer--flex .footer--main-menu a:focus,.footer--flex .footer--social-menu a:hover,.footer--flex .footer--social-menu a:focus {
-  border-bottom: solid 1px #f26002;
+  border-bottom: dashed 3px #f26002;
 }
 
 .footer--flex .footer--page-info {

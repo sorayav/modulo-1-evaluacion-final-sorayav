@@ -20,6 +20,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        a {
+            padding: 30%;
+        }
     }
 
     &--top {
@@ -76,10 +80,19 @@
         background-color: $headerColor;
         padding-top: 1%;
 
+        img {
+            
+        }
+
         @include forTablet {
             padding-top: 0.5%;
         }
 
-
+        &:hover, &:focus, &:active {
+            border-radius: 20%;
+            background-color: transparent;
+            border: dashed 3px $headerColor;
+            transition: all 0.2s linear;
+        }
     }
 }

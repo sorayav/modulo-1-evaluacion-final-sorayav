@@ -72,7 +72,7 @@
             color: $headerColor;
 
             &:hover, &:focus {
-                border-bottom: solid 1px $btnColor;
+                border-bottom: dashed 3px $btnColor;
             }
         }
     }
