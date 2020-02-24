@@ -59,12 +59,12 @@
         font-family: $mainFont;
         font-size: $secondTitle-mb;
         margin-top: 0;
-        padding: 15px 0 45px 0;
+        padding: 15px 0 30px 0;
         font-weight: lighter;
 
         @include forTablet {
             font-size: $secondTitle-tb;
-            padding: 20px 0 30px 0;
+            padding: 20px 0;
         }
 
         @include forPc {

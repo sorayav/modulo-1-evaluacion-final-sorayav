@@ -314,7 +314,7 @@ button {
   font-family: "Roboto";
   font-size: 16px;
   margin-top: 0;
-  padding: 15px 0 45px 0;
+  padding: 15px 0 30px 0;
   font-weight: lighter;
 }
 
@@ -556,7 +556,7 @@ button {
 
   .header .header--h2 {
     font-size: 24px;
-    padding: 20px 0 30px 0;
+    padding: 20px 0;
   }
 
   .header .header--btn {
