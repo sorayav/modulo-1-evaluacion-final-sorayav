@@ -15,7 +15,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%,-50%);
-        animation: btn-footer__animation 2s infinite ease-out;
+        animation: btn-footer__animation 2s infinite linear;
 
         img {
             padding-top: 25%;

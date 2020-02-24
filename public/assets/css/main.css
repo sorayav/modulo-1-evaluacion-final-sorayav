@@ -329,10 +329,9 @@ button {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  border: none;
   background-color: #fff;
   padding-top: 1%;
-  -webkit-animation: btn-header__animation 2s infinite linear;
-  animation: btn-header__animation 2s infinite linear;
 }
 
 .main {
@@ -498,8 +497,8 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation: btn-footer__animation 2s infinite ease-out;
-  animation: btn-footer__animation 2s infinite ease-out;
+  -webkit-animation: btn-footer__animation 2s infinite linear;
+  animation: btn-footer__animation 2s infinite linear;
 }
 
 .footer .btn-footer img {
@@ -699,30 +698,6 @@ button {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     padding: 45px 370px;
-  }
-}
-
-@-webkit-keyframes btn-header__animation {
-  from {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-
-  to {
-    -webkit-box-shadow: 0 0 0 10px rgba(242, 96, 2, 0);
-    box-shadow: 0 0 0 10px rgba(242, 96, 2, 0);
-  }
-}
-
-@keyframes btn-header__animation {
-  from {
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-
-  to {
-    -webkit-box-shadow: 0 0 0 10px rgba(242, 96, 2, 0);
-    box-shadow: 0 0 0 10px rgba(242, 96, 2, 0);
   }
 }
 
