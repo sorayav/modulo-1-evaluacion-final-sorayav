@@ -496,12 +496,8 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-animation-name: btn-footer__animation;
-  animation-name: btn-footer__animation;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  -webkit-animation: btn-footer__animation 2s infinite linear;
+  animation: btn-footer__animation 2s infinite linear;
 }
 
 .footer .btn-footer img {

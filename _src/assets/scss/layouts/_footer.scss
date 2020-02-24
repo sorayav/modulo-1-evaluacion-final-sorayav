@@ -15,9 +15,7 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%,-50%);
-        animation-name: btn-footer__animation;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+        animation: btn-footer__animation 2s infinite linear;
 
         img {
             padding-top: 25%;
@@ -29,10 +27,10 @@
             }
 
             50% {
+                // box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
                 transform: translate(-50%,-55%);
             }
             100% {
-                // box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
                 transform: translate(-50%,-50%);
             }
         }
