@@ -15,9 +15,26 @@
         position: absolute;
         left: 50%;
         transform: translate(-50%,-50%);
+        animation-name: btn-footer__animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
 
         img {
             padding-top: 25%;
+        }
+
+        @keyframes btn-footer__animation {
+            0% {
+                transform: translate(-50%,-50%);
+            }
+
+            50% {
+                transform: translate(-50%,-55%);
+            }
+            100% {
+                // box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                transform: translate(-50%,-50%);
+            }
         }
     }
 }
@@ -30,24 +47,29 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 45px 0;
+    padding: 45px 40px;
 
     @include forTablet {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
         text-align: left;
+        padding-right: 95px; // This padding can be removed for even spaces between sections. Added for consistency with design.
     }
 
-        @include forPc {
+    @include forPc {
+        justify-content: space-evenly;
         padding: 45px 370px;
-        
     }
     
     .footer-main-menu, .footer-social-menu {
         text-transform: uppercase;
         line-height: 30px;
-        
+
+        @include forTablet {
+            order: 2;
+        }
+
         a {
             color: $headerColor;
 
@@ -59,6 +81,10 @@
 
     .footer-page-info {
         font-size: $smallContent-mb;
+
+        @include forTablet {
+            order: 1;
+        }
 
         p {
             line-height: 1;
