@@ -80,10 +80,6 @@
         background-color: $headerColor;
         padding-top: 1%;
 
-        img {
-            
-        }
-
         @include forTablet {
             padding-top: 0.5%;
         }
