@@ -1,6 +1,28 @@
-
 .footer {
     background-color: $footerBgColor;
+
+    .btn-footer {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        img {
+            padding-top: 25%;
+        }
+    }
+}
+
+.footer-flex {
     font-family: $mainFont;
     color: $headerColor;
     display: flex;
@@ -8,22 +30,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 45px 0;
 
-    .btn-footer {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: white;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin-top: -25px;
+    @include forTablet {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        text-align: left;
+    }
 
-        img {
-            padding-top: 25%;
-        }
+        @include forPc {
+        padding: 45px 370px;
+        
     }
     
     .footer-main-menu, .footer-social-menu {
@@ -41,7 +59,10 @@
 
     .footer-page-info {
         font-size: $smallContent-mb;
-        
+
+        p {
+            line-height: 1;
+        }
 
         .footer-heart {
             color: $btnColor;

@@ -226,6 +226,10 @@ ul,li {
   padding-left: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -253,6 +257,10 @@ body {
 p {
   font-family: "Roboto";
   line-height: 30px;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header {
@@ -377,17 +385,21 @@ p {
 
 .main .section-articles .btn-article a {
   color: #f26002;
+  display: block;
+  width: 100%;
+  padding: 5% 0;
 }
 
 .main .section-articles .btn-article a:hover,.main .section-articles .btn-article a:focus {
   color: #fff;
+  width: 100%;
 }
 
 .main .section-articles .btn-article:hover,.main .section-articles .btn-article:focus {
-  color: #fff;
   background-color: #f26002;
-  -webkit-transition: background-color 0.3s linear;
-  transition: background-color 0.3s linear;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .main .section-purchase {
@@ -440,11 +452,15 @@ p {
 }
 
 .main .section-purchase .btn-purchase a {
+  color: #f26002;
+  display: block;
+  width: 100%;
   color: #fff;
 }
 
-.main .section-purchase .btn-purchase a:hover {
+.main .section-purchase .btn-purchase a:hover,.main .section-purchase .btn-purchase a:focus {
   color: #f26002;
+  width: 100%;
 }
 
 .main .section-purchase .btn-purchase:hover {
@@ -456,6 +472,37 @@ p {
 
 .footer {
   background-color: #304268;
+}
+
+.footer .btn-footer {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.footer .btn-footer img {
+  padding-top: 25%;
+}
+
+.footer-flex {
   font-family: "Roboto";
   color: #fff;
   display: -webkit-box;
@@ -472,50 +519,31 @@ p {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  padding: 45px 0;
 }
 
-.footer .btn-footer {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  margin-top: -25px;
-}
-
-.footer .btn-footer img {
-  padding-top: 25%;
-}
-
-.footer .footer-main-menu,.footer .footer-social-menu {
+.footer-flex .footer-main-menu,.footer-flex .footer-social-menu {
   text-transform: uppercase;
   line-height: 30px;
 }
 
-.footer .footer-main-menu a,.footer .footer-social-menu a {
+.footer-flex .footer-main-menu a,.footer-flex .footer-social-menu a {
   color: #fff;
 }
 
-.footer .footer-main-menu a:hover,.footer .footer-main-menu a:focus,.footer .footer-social-menu a:hover,.footer .footer-social-menu a:focus {
+.footer-flex .footer-main-menu a:hover,.footer-flex .footer-main-menu a:focus,.footer-flex .footer-social-menu a:hover,.footer-flex .footer-social-menu a:focus {
   border-bottom: solid 1px #f26002;
 }
 
-.footer .footer-page-info {
+.footer-flex .footer-page-info {
   font-size: 14px;
 }
 
-.footer .footer-page-info .footer-heart {
+.footer-flex .footer-page-info p {
+  line-height: 1;
+}
+
+.footer-flex .footer-page-info .footer-heart {
   color: #f26002;
 }
 
@@ -589,6 +617,20 @@ p {
   .main .section-purchase .btn-purchase {
     width: 210px;
   }
+
+  .footer-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 @media all and (min-width: 1200px) {
@@ -633,6 +675,10 @@ p {
 
   .main .section-purchase .btn-purchase {
     width: 255px;
+  }
+
+  .footer-flex {
+    padding: 45px 370px;
   }
 }
 
